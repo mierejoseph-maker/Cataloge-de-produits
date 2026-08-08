@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalague quincallerie</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <p class="eyebrow">Inventaire — Atelier &amp; Cie</p>
+      <h1>Catalogue quincaillerie</h1>
+      <p>
+        Douze références d'outillage, classées et chiffrées en direct : filtre
+        par catégorie, par prix, tri par tarif et campagne de réduction -10%.
+      </p>
+    </header>
+
+    <main>
+      <section class="filters">
+        <div class="filter-group">
+          <label>Catégorie</label>
+          <div class="chip-row" id="category-filters"></div>
+        </div>
+
+        <div class="filter-group">
+          <label>Prix maximum</label>
+          <div style="display: flex; align-items: center; gap: 0.6rem">
+            <input
+              type="range"
+              id="price-range"
+              min="0"
+              max="150"
+              step="5"
+              value="150"
+            />
+            <span class="price-value" id="price-value">150 €</span>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <label>Tri par prix</label>
+          <div class="sort-group">
+            <button class="action" id="sort-asc" data-sort="asc">
+              Croissant ↑
+            </button>
+            <button class="action" id="sort-desc" data-sort="desc">
+              Décroissant ↓
+            </button>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <label>Campagne</label>
+          <div class="discount-group">
+            <button class="action" id="discount-toggle">Appliquer -10%</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="summary">
+        <div>
+          <div class="stat-label">Produits affichés</div>
+          <div class="stat-value" id="stat-count">0</div>
+        </div>
+        <div>
+          <div class="stat-label">Valeur totale du stock affiché</div>
+          <div class="stat-value" id="stat-value">0 €</div>
+        </div>
+      </section>
+
+      <section class="grid" id="sortie"></section>
+    </main>
+
+    <footer>
+      <p>Akieni Academy — Cohorte 2 — 2026</p>
+    </footer>
+    <script src="catalogue.js"></script>
+  </body>
+</html>

@@ -4,18 +4,18 @@ function afficher(html) {
 }
 
 const catalogue = [
-  { id: 1, sku: "OUT-001", nom: "Marteau de charpentier", categorie: "Outillage", prix: 28, stock: 14, swatchA: "#8f9799", swatchB: "#34383a" },
-  { id: 2, sku: "OUT-002", nom: "Tournevis plat", categorie: "Outillage", prix: 9.5, stock: 32, swatchA: "#d1a13c", swatchB: "#5c421a" },
-  { id: 3, sku: "OUT-003", nom: "Perceuse sans fil", categorie: "Outillage", prix: 129, stock: 6, swatchA: "#475663", swatchB: "#171d24" },
-  { id: 4, sku: "FIX-001", nom: "Boîte de vis 4 mm", categorie: "Fixation", prix: 12, stock: 40, swatchA: "#b8a17b", swatchB: "#625442" },
-  { id: 5, sku: "FIX-002", nom: "Chevilles universelles", categorie: "Fixation", prix: 8, stock: 0, swatchA: "#d6c58e", swatchB: "#826e3f" },
-  { id: 6, sku: "FIX-003", nom: "Équerres de fixation", categorie: "Fixation", prix: 18.5, stock: 18, swatchA: "#a8afb0", swatchB: "#535c5e" },
-  { id: 7, sku: "MES-001", nom: "Mètre ruban 5 m", categorie: "Mesure", prix: 16, stock: 25, swatchA: "#f1cb43", swatchB: "#3d3520" },
-  { id: 8, sku: "MES-002", nom: "Niveau à bulle", categorie: "Mesure", prix: 34, stock: 9, swatchA: "#80b48b", swatchB: "#315642" },
-  { id: 9, sku: "MES-003", nom: "Équerre métallique", categorie: "Mesure", prix: 11.5, stock: 21, swatchA: "#c8c8c2", swatchB: "#565754" },
-  { id: 10, sku: "SEC-001", nom: "Gants de protection", categorie: "Protection", prix: 14, stock: 30, swatchA: "#cc7d43", swatchB: "#59331f" },
-  { id: 11, sku: "SEC-002", nom: "Lunettes de sécurité", categorie: "Protection", prix: 19, stock: 0, swatchA: "#8db2bd", swatchB: "#304a52" },
-  { id: 12, sku: "SEC-003", nom: "Casque de chantier", categorie: "Protection", prix: 42, stock: 11, swatchA: "#e5b735", swatchB: "#6c5316" },
+  { id: 1, sku: "OUT-001", nom: "Marteau de charpentier", categorie: "Outillage", prix: 28, stock: 14, image: "https://www.tools.hamer.co.nz/cdn/shop/files/CH-20_0e45e855-bad6-41ce-a84d-241dd8ce7a08.jpg?v=1736910922&width=1946" },
+  { id: 2, sku: "OUT-002", nom: "Tournevis plat", categorie: "Outillage", prix: 9.5, stock: 32, image: "https://d3m9l0v76dty0.cloudfront.net/system/photos/4286809/large/796e718ab985db244ad7fbd788b4336a.jpg" },
+  { id: 3, sku: "OUT-003", nom: "Perceuse sans fil", categorie: "Outillage", prix: 129, stock: 6, image: "https://media.adeo.com/mkp/e2dd7a3be84c8df33a057d595274e852/media.jpg" },
+  { id: 4, sku: "FIX-001", nom: "Boîte de vis 4 mm", categorie: "Fixation", prix: 12, stock: 40, image: "https://www.tihsa.com/57963-large_default/caja-de-100-tornillos-para-metal-cabeza-redonda-10-x-3-4-pulg-toolcraft.jpg" },
+  { id: 5, sku: "FIX-002", nom: "Chevilles universelles", categorie: "Fixation", prix: 8, stock: 0, image: "https://www.huck-net.co.uk/media/img/images/wa2316_TevJkLk.jpg" },
+  { id: 6, sku: "FIX-003", nom: "Équerres de fixation", categorie: "Fixation", prix: 18.5, stock: 18, image: "https://media.wickes.co.uk/is/image/wickes/E3131_246005_00?%24largeNormal%24=&defaultImage=wickes%2F2018-Wickes-Missing-Product-650x650" },
+  { id: 7, sku: "MES-001", nom: "Mètre ruban 5 m", categorie: "Mesure", prix: 16, stock: 25, image: "https://d207zvy2rsg5b5.cloudfront.net/CA95212E-1CBC-4330-87DF-3DD5D3661085/Products/Medium/STAN33425-33-425_3.jpg" },
+  { id: 8, sku: "MES-002", nom: "Niveau à bulle", categorie: "Mesure", prix: 34, stock: 9, image: "https://upload.wikimedia.org/wikipedia/commons/3/38/Spirit_Level_5E5W0843.jpg" },
+  { id: 9, sku: "MES-003", nom: "Équerre métallique", categorie: "Mesure", prix: 11.5, stock: 21, image: "https://upload.wikimedia.org/wikipedia/commons/0/02/Steel_Square-1.jpg" },
+  { id: 10, sku: "SEC-001", nom: "Gants de protection", categorie: "Protection", prix: 14, stock: 30, image: "https://cdn.store-assets.com/s/898807/i/66638891.jpg?width=1024" },
+  { id: 11, sku: "SEC-002", nom: "Lunettes de sécurité", categorie: "Protection", prix: 19, stock: 0, image: "https://mutualindustries.com/Products/highres/4514.jpg" },
+  { id: 12, sku: "SEC-003", nom: "Casque de chantier", categorie: "Protection", prix: 42, stock: 11, image: "https://images.thdstatic.com/productImages/b4f3a039-ba5b-40a0-88bc-1e10f355ac95/svn/white-pip-hard-hats-pro11rw-vpd6-64_600.jpg" },
 ];
 
 let state = {
@@ -109,7 +109,7 @@ let state = {
   }
  
   function cardMarkup(produit, isCheapest) {
-    const { sku, nom, categorie, prix, prixFinal, stock, swatchA, swatchB } = produit;
+    const { sku, nom, categorie, prix, prixFinal, stock, image } = produit;
     const stockClass = stock === 0 ? 'empty' : '';
     const priceRow = state.discountActive
       ? `<span class="price-old">${prix.toFixed(2)} €</span><span class="price-final">${prixFinal.toFixed(2)} €</span>`
@@ -119,7 +119,7 @@ let state = {
       <article class="card">
         ${badgeMarkup(produit, isCheapest)}
         <span class="sku">${sku}</span>
-        <div class="swatch" style="--swatch-a:${swatchA}; --swatch-b:${swatchB};"></div>
+        <img class="product-image" src="${image}" alt="${nom}" loading="lazy" />
         <span class="category-tag">${categorie}</span>
         <h3 class="name">${nom}</h3>
         <div class="price-row">${priceRow}</div>

@@ -2,6 +2,11 @@
 
 Une application web interactive permettant de consulter un inventaire de produits de quincaillerie. Elle présente les articles sous forme de cartes et offre des outils de filtrage, de tri et de promotion.
 
+<img src="Capture d'écran 2026-08-09 004807" alt="capture d'ecran" whidth="600" />
+
+<img src="Capture d'écran 2026-08-09 004846" alt="capture d'ecran" whidth="600" />
+
+
 ## Aperçu
 
 Le catalogue contient 12 références réparties dans quatre catégories : **Outillage**, **Fixation**, **Mesure** et **Protection**. Chaque fiche produit affiche sa référence, son nom, son prix et son niveau de stock.

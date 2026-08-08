@@ -12,7 +12,7 @@ const catalogue = [
   { id: 6, sku: "FIX-003", nom: "Équerres de fixation", categorie: "Fixation", prix: 18.5, stock: 18, image: "https://media.wickes.co.uk/is/image/wickes/E3131_246005_00?%24largeNormal%24=&defaultImage=wickes%2F2018-Wickes-Missing-Product-650x650" },
   { id: 7, sku: "MES-001", nom: "Mètre ruban 5 m", categorie: "Mesure", prix: 16, stock: 25, image: "https://d207zvy2rsg5b5.cloudfront.net/CA95212E-1CBC-4330-87DF-3DD5D3661085/Products/Medium/STAN33425-33-425_3.jpg" },
   { id: 8, sku: "MES-002", nom: "Niveau à bulle", categorie: "Mesure", prix: 34, stock: 9, image: "https://upload.wikimedia.org/wikipedia/commons/3/38/Spirit_Level_5E5W0843.jpg" },
-  { id: 9, sku: "MES-003", nom: "Équerre métallique", categorie: "Mesure", prix: 11.5, stock: 21, image: "https://upload.wikimedia.org/wikipedia/commons/0/02/Steel_Square-1.jpg" },
+  { id: 9, sku: "MES-003", nom: "Équerre métallique", categorie: "Mesure", prix: 11.5, stock: 21, image: "https://ae01.alicdn.com/kf/HTB1hzlSapYM8KJjSZFuq6Af7FXaj/10pack-Stainless-Steel-Right-Measuring-Angle-Square-Ruler-30cm.jpg" },
   { id: 10, sku: "SEC-001", nom: "Gants de protection", categorie: "Protection", prix: 14, stock: 30, image: "https://cdn.store-assets.com/s/898807/i/66638891.jpg?width=1024" },
   { id: 11, sku: "SEC-002", nom: "Lunettes de sécurité", categorie: "Protection", prix: 19, stock: 0, image: "https://mutualindustries.com/Products/highres/4514.jpg" },
   { id: 12, sku: "SEC-003", nom: "Casque de chantier", categorie: "Protection", prix: 42, stock: 11, image: "https://images.thdstatic.com/productImages/b4f3a039-ba5b-40a0-88bc-1e10f355ac95/svn/white-pip-hard-hats-pro11rw-vpd6-64_600.jpg" },

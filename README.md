@@ -2,9 +2,9 @@
 
 Une application web interactive permettant de consulter un inventaire de produits de quincaillerie. Elle présente les articles sous forme de cartes et offre des outils de filtrage, de tri et de promotion.
 
-<img src="image/Capture d'écran 2026-08-09 004807" alt="capture d'ecran" whidth="600" />
+<img src="image/Capture d'écran 2026-08-09 004807.png" alt="capture d'ecran" whidth="600" />
 
-<img src="image/Capture d'écran 2026-08-09 004846" alt="capture d'ecran" whidth="600" />
+<img src="image/Capture d'écran 2026-08-09 004846.png" alt="capture d'ecran" whidth="600" />
 
 
 ## Aperçu
